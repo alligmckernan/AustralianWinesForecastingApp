@@ -8,7 +8,7 @@ library(feasts)
 library(zoo)
 
 # Load & Wrangle
-wines_raw <- read_csv("C:/Users/allig/Downloads/AustralianWines.csv")
+wines_raw <- read_csv("AustralianWines.csv")
 
 wines_ts <- wines_raw %>%
   mutate(
@@ -338,5 +338,6 @@ server <- function(input, output, session) {
   
   
 }
+
 
 shinyApp(ui, server)
